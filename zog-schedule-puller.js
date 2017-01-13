@@ -18,6 +18,14 @@
     var opponents = '';
     var homeaway = '';
 
+    for (i = 0; i < $('#ScheduleListArea').children().size() / 2; i += 2) {
+        var date = $('#ScheduleListArea').children()[i];
+        var event = $('#ScheduleListArea').children()[i + 1];
+        var time = $(event).find('.time').text();
+        console.log($(date).text());
+        console.log(time);
+    }
+    
     var nl = "\n";
 
     var file = '';
